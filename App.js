@@ -1,16 +1,11 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Header } from 'react-native-elements';
+import React, { Component } from 'react';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import Icon from '@expo/vector-icons/Ionicons';
+import { createSwitchNavigator, createAppContainer, createDrawerNavigator, createBottomTabNavigator, createStackNavigator } from 'react-navigation';
+import DrawerNav from './navigator/DrawerNav';
 
-export default function App() {
+export default function App(){
   return (
-    <View>
-      <Header
-        leftComponent={{ icon: 'menu', color: '#fff' }}
-        centerComponent={{ text: 'FIK Information App', style: { color: '#fff' } }}
-        rightComponent={{ icon: 'home', color: '#fff' }}
-      />
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+    <DrawerNav/>
+  )
 }
