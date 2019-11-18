@@ -6,6 +6,8 @@ import DrawerNav from './navigator/DrawerNav';
 
 export default function App(){
   return (
-    <DrawerNav />
+    <DrawerNav/>
   )
 }
+
+ss
