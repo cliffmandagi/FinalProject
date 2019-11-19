@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Platform, Dimensions, View, Text, Button } from 'react-native';
 import { createStackNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
 import Icon from '@expo/vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons';
 
 class TI extends Component {
     render() {
@@ -23,15 +24,27 @@ class SI extends Component {
     }
 }
 
+const getTabBarIcon = (navigation, focused, tintColor) => {
+  const { routeName } = navigation.state;
+  let IconComponent = Ionicons;
+  let iconName;
+  if (routeName === "Teknik Informatika") {
+    iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+  } else if (routeName === "Sistem Informasi") {
+    iconName = `ios-information-circle${focused ? '' : '-outline'}`;
+  }
+  return <IconComponent name={iconName} size={25} color={tintColor} />;
+};
+
 const TabNavigator = createBottomTabNavigator(
     {
       "Teknik Informatika": TI,
       "Sistem Informasi": SI
     },
     {
-      navigationOptions: ({ navigation }) => {
-        const { routeName } = navigation.state.routes[navigation.state.index];
-        return {
+      defaultNavigationOptions: ({ navigation }) => ({
+            tabBarIcon: ({ focused, tintColor }) =>
+              getTabBarIcon(navigation, focused, tintColor),
             headerLeft: (
                 <Icon
                     style={{ paddingLeft: 10 }}
@@ -41,8 +54,11 @@ const TabNavigator = createBottomTabNavigator(
                 />
             ),
             headerTitle: "Curriculum"
-        };
-      }
+      }),
+      tabBarOptions: {
+        activeTintColor: 'tomato',
+        inactiveTintColor: 'gray',
+      },
     }
 );
 
