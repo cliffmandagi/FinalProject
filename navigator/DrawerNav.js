@@ -4,6 +4,7 @@ import { createDrawerNavigator, createAppContainer } from 'react-navigation';
 
 import Home from '../screens/Home';
 import Curriculum from '../screens/Curriculum';
+import ContactUs from '../screens/ContactUs';
 
 const WIDTH = Dimensions.get('window').width;
 
@@ -14,7 +15,8 @@ const DrawerConfig = {
 const DrawerNavigator =  createDrawerNavigator(
 	{
         Home: Home,
-        Curriculum: Curriculum
+        Curriculum: Curriculum,
+        ContactUs: ContactUs
 	},
 	DrawerConfig
 );

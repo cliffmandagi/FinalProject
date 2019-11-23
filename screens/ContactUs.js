@@ -4,6 +4,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Icon from '@expo/vector-icons/Ionicons';
 
 const ContactUs = () => {
+    
 }
  
 const StackNavigator =  createStackNavigator({
