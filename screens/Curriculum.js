@@ -59,7 +59,11 @@ const StackNavigator =  createStackNavigator({
                     size={30}
                 />
             ),
-            headerTitle: "FIK Information App"
+            headerTintColor: 'white',
+            headerStyle: {
+                borderBottomColor: 'transparent',
+                backgroundColor: '#3575D3',
+            }
         }
   }
 });
