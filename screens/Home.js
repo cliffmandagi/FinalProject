@@ -3,59 +3,50 @@ import { Platform, Dimensions, View, Text, StyleSheet, TouchableOpacity, Image, 
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Icon from '@expo/vector-icons/Ionicons';
 
-
 class Home extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-          data: [
-            {id:1, title: "Lorem ipsum dolor",                  time:"2018-08-01 12:15 pm", image:"https://lorempixel.com/400/200/nature/6/", description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula..."},
-            {id:2, title: "Sit amet, consectetuer",             time:"2018-08-12 12:00 pm", image:"https://lorempixel.com/400/200/nature/5/", description:"Lorem  dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula..."} ,
-            {id:3, title: "Dipiscing elit. Aenean ",            time:"2017-08-05 12:21 pm", image:"https://lorempixel.com/400/200/nature/4/", description:"Lorem ipsum dolor sit , consectetuer  elit. Aenean commodo ligula..."}, 
-            {id:4, title: "Commodo ligula eget dolor.",         time:"2015-08-12 12:00 pm", image:"https://lorempixel.com/400/200/nature/6/", description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula..."}, 
-            {id:5, title: "Aenean massa. Cum sociis",           time:"2013-06-12 12:11 pm", image:"https://lorempixel.com/400/200/sports/1/", description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  commodo ligula..."}, 
-            {id:6, title: "Natoque penatibus et magnis",        time:"2018-08-12 12:56 pm", image:"https://lorempixel.com/400/200/nature/8/", description:"Lorem ipsum  sit amet, consectetuer adipiscing elit. Aenean commodo ligula..."}, 
-            {id:7, title: "Dis parturient montes, nascetur",    time:"2018-08-12 12:33 pm", image:"https://lorempixel.com/400/200/nature/1/", description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula..."}, 
-            {id:8, title: "Ridiculus mus. Donec quam",          time:"2018-06-12 12:44 pm", image:"https://lorempixel.com/400/200/nature/3/", description:"Lorem ipsum  sit amet, consectetuer adipiscing elit.  commodo ligula..."},
-            {id:9, title: "Felis, ultricies nec, pellentesque", time:"2012-07-12 12:23 pm", image:"https://lorempixel.com/400/200/nature/4/", description:"Lorem ipsum dolor sit amet, consectetuer  elit. Aenean commodo ligula..."},
-          ]
-        };
-      }
-
     render(){
-        return (
-            <View style={styles.container}>
-        <FlatList style={styles.list}
-          data={this.state.data}
-          keyExtractor= {(item) => item.title}
-          ItemSeparatorComponent={() => {
             return (
-              <View style={styles.separator}/>
-            )
-          }}
-          renderItem={(post) => {
-            const item = post.item;
-            return (
-              <View style={styles.card}>
-                <Image style={styles.cardImage} source={{uri:item.image}}/>
-                <View style={styles.cardHeader}>
-                  <View>
-                    <Text style={styles.title}>{item.title}</Text>
-                    <Text style={styles.description}>{item.description}</Text>
-                  </View>
+                <View style={{ flex: 1, backgroundColor:'#E6E6E6' }}>
+                    <View style={{ flex: 1, marginHorizontal: 10 }}>
+                        <ScrollView showsVerticalScrollIndicator={false}>
+                            <View style={styles.card}>
+                                <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
+                                    <View style={styles.cardHeader}>
+                                    <View>
+                                        <Text style={styles.title}>Lorem ipsum dolor</Text>
+                                        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                                    </View>
+                                </View>
+                            </View>
+                            <View style={styles.card}>
+                                <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
+                                    <View style={styles.cardHeader}>
+                                    <View>
+                                        <Text style={styles.title}>Lorem ipsum dolor</Text>
+                                        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                                    </View>
+                                </View>
+                            </View>
+                            <View style={styles.card}>
+                                <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
+                                    <View style={styles.cardHeader}>
+                                    <View>
+                                        <Text style={styles.title}>Lorem ipsum dolor</Text>
+                                        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                                    </View>
+                                </View>
+                            </View>
+                        </ScrollView>
+                    </View>
                 </View>
-              </View>
             )
-          }}/>
-      </View>
-        )
-    }
-}
+          }
+        }
 
 {/* <View style={{ flex: 1, justifyContent: 'center' , marginHorizontal: 15 }}>
               <Text style={{ fontSize: 25, fontWeight : 'bold', alignSelf: 'center' }}> Welcome and Greeting</Text>
               <Text >&emsp;&emsp; Fakultas Ilmu Komputer, Universitas Klabat ini dibuat untuk melayani kebutuhan informasi bagi Staff, Dosen, Mahasiswa, alumni, pengguna lulusan, dan masyarakat umum. Website ini berisikan Informasi organisasional, akademik, maupun berita-berita yang sedang dan akan terjadi di Fakultas Ilmu Komputer, Universitas KLabat. Melalui website ini semua pihak bisa mendapatkan informasi yang terpercaya dan dapat meningkatkan citra serta meningkatkan kepercayaan terhadap Fakultas Ilmu Komputer, Universitas Klabat.</Text>
-            </View> */}
+    </View> */}
  
 const StackNavigator =  createStackNavigator({
     Home: Home
