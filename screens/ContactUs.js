@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Platform, Dimensions, View, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Icon from '@expo/vector-icons/Ionicons';
 
-const ContactUs = () => {
+class ContactUs extends Component{
+    render(){
+        return(
+            <Text>TEST</Text>
+        )
+    }
 }
  
 const StackNavigator =  createStackNavigator({
