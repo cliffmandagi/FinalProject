@@ -5,43 +5,42 @@ import Icon from '@expo/vector-icons/Ionicons';
 
 class Home extends Component{
     render(){
-            return (
-                <View style={{ flex: 1, backgroundColor:'#E6E6E6' }}>
-                    <View style={{ flex: 1, marginHorizontal: 10 }}>
-                        <ScrollView showsVerticalScrollIndicator={false}>
-                            <View style={styles.card}>
-                                <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
-                                    <View style={styles.cardHeader}>
-                                    <View>
-                                        <Text style={styles.title}>Lorem ipsum dolor</Text>
-                                        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
-                                    </View>
-                                </View>
+        return (
+            <View style={{ flex: 1, backgroundColor:'#E6E6E6' }}>
+                <ScrollView showsVerticalScrollIndicator={false}>
+                    <Text style={{ fontSize: 18, fontWeight: "bold", marginLeft: 20, marginTop: 10 }}>News</Text>
+                    <View style={styles.card}>
+                        <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
+                            <View style={styles.cardHeader}>
+                            <View>
+                                <Text style={styles.title}>Lorem ipsum dolor</Text>
+                                <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
                             </View>
-                            <View style={styles.card}>
-                                <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
-                                    <View style={styles.cardHeader}>
-                                    <View>
-                                        <Text style={styles.title}>Lorem ipsum dolor</Text>
-                                        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
-                                    </View>
-                                </View>
-                            </View>
-                            <View style={styles.card}>
-                                <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
-                                    <View style={styles.cardHeader}>
-                                    <View>
-                                        <Text style={styles.title}>Lorem ipsum dolor</Text>
-                                        <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
-                                    </View>
-                                </View>
-                            </View>
-                        </ScrollView>
+                        </View>
                     </View>
-                </View>
-            )
-          }
-        }
+                    <View style={styles.card}>
+                        <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/5/'}}/>
+                            <View style={styles.cardHeader}>
+                            <View>
+                                <Text style={styles.title}>Lorem ipsum dolor</Text>
+                                <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.card}>
+                        <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/4/'}}/>
+                            <View style={styles.cardHeader}>
+                            <View>
+                                <Text style={styles.title}>Lorem ipsum dolor</Text>
+                                <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                            </View>
+                        </View>
+                    </View>
+                </ScrollView>
+            </View>
+        )
+    }
+}
 
 {/* <View style={{ flex: 1, justifyContent: 'center' , marginHorizontal: 15 }}>
               <Text style={{ fontSize: 25, fontWeight : 'bold', alignSelf: 'center' }}> Welcome and Greeting</Text>
@@ -93,7 +92,8 @@ const styles = StyleSheet.create({
       shadowOpacity: 0.5,
       shadowRadius: 4,
       marginVertical: 8,
-      backgroundColor:"white"
+      backgroundColor:"white",
+      marginHorizontal: 10,
     },
     cardHeader: {
       paddingVertical: 17,
