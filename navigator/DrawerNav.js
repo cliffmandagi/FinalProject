@@ -20,7 +20,7 @@ class SideMenu extends Component {
     return (
         <View style={styles.container}>
             <View style={{ height:200 }}>
-                <ImageBackground source={require('../assets/beach.jpg')} style={{flex: 1, width: 280, justifyContent: 'flex-end'}} >
+                <ImageBackground source={require('../assets/drawerbackground2.jpg')} style={{flex: 1, width: 280, justifyContent: 'flex-end'}} >
                     <View style={{ marginLeft: 5}}>
                         <Text style={{ color:'white', fontWeight: 'bold' }}>Mobile Programming</Text>
                         <Text style={{ color:'white', marginBottom: 10 }}>s217xxxx@student.unklab.ac.id</Text>
