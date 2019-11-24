@@ -22,7 +22,11 @@ class SideMenu extends Component {
             <View style={{ height:200 }}>
                 <ImageBackground source={require('../assets/drawerbackground2.jpg')} style={{flex: 1, width: 280, justifyContent: 'flex-end'}} >
                     <View style={{ marginLeft: 5}}>
-                        <Text style={{ color:'white', fontWeight: 'bold' }}>Mobile Programming</Text>
+                        <Image
+                            source={{ uri: 'https://bootdey.com/img/Content/avatar/avatar1.png'}}
+                            style={{ width: 50, height: 50, borderRadius: 63, borderWidth: 1 }}
+                        />
+                        <Text style={{ color:'white', fontWeight: 'bold', marginTop: 8 }}>Mobile Programming</Text>
                         <Text style={{ color:'white', marginBottom: 10 }}>s217xxxx@student.unklab.ac.id</Text>
                     </View>
                 </ImageBackground>

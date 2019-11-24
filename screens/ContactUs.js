@@ -6,7 +6,9 @@ import Icon from '@expo/vector-icons/Ionicons';
 class ContactUs extends Component{
     render(){
         return(
-            <Text>TEST</Text>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <Text>This is Contact Us</Text>
+            </View>
         )
     }
 }
