@@ -42,10 +42,6 @@ class Home extends Component{
                   <View>
                     <Text style={styles.title}>{item.title}</Text>
                     <Text style={styles.description}>{item.description}</Text>
-                    <View style={styles.timeContainer}>
-                      <Image style={styles.iconData} source={{uri: 'https://png.icons8.com/color/96/3498db/calendar.png'}}/>
-                      <Text style={styles.time}>{item.time}</Text>
-                    </View>
                   </View>
                 </View>
               </View>
