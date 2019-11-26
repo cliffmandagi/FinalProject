@@ -112,49 +112,209 @@ const smstr9 = {
     ['13','DABS451','Data Mining/ Data Mining (3)','Elective'],
     ['14','CSAR431','Multimedia/ Multimedia (3)','Elective'],]};
 
-class SI extends Component {
-    render() {
-      return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Text>This is SI</Text>
-        </View>
-      );
-    }
+const head = {
+  header:['No.','Code','Subject Name','Type']
 }
 
-class TI extends Component {
-    constructor(props){
-       super(props);
-       this.state = {
-          tableHeader: smstr1.header,
-          tableHead: ['No.','Code','Subject Name','Type'],
-          tableData: smstr1.data,
-       }
-    }
-    fun_name(value){
-      alert(value);
-    }
-    render() {
-      const state = this.state;
-      return (
-        <View style={{ marginHorizontal: 10, marginVertical: 10 }}>
-          <View>
-            <Picker onValueChange={this.fun_name}>
-              <Picker.Item label="Semester 1" value="1"/>
-              <Picker.Item label="Semester 2" value="2"/>
-            </Picker>
-          </View>
-          <View style={{ marginTop: 10 }}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+class SI extends Component {
+  render() {
+    return (
+      <View style={{ marginHorizontal: 10, marginBottom: 10 }}>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <View style={{ marginVertical: 10 }}>
               <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
-                <Row data={state.tableHeader} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
-                <Row data={state.tableHead} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <Row data={smstr0.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
                 <TableWrapper style={{ flexDirection: 'row' }}>
-                  <Rows data={state.tableData} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  <Rows data={smstr0.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
                 </TableWrapper>
               </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr1.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr1.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr2.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr2.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr3.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr3.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr4.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr4.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr5.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr5.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr6.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr6.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr7.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr7.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr8.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr8.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+            <View style={{ marginBottom: 10 }}>
+              <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                <Row data={smstr9.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                <TableWrapper style={{ flexDirection: 'row' }}>
+                  <Rows data={smstr9.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                </TableWrapper>
+              </Table>
+            </View>
+          </ScrollView>
+      </View>
+    );
+  }
+}
+
+
+
+class TI extends Component {
+    render() {
+      return (
+        <View style={{ marginHorizontal: 10, marginBottom: 10 }}>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <View style={{ marginVertical: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr0.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr0.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr1.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr1.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr2.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr2.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr3.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr3.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr4.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr4.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr5.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr5.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr6.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr6.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr7.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr7.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr8.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr8.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
+              <View style={{ marginBottom: 10 }}>
+                <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
+                  <Row data={smstr9.header} style={{ height: 35, backgroundColor: '#f1f8ff' }} textStyle={{ textAlign: 'center', fontWeight: 'bold' }}/>
+                  <Row data={head.header} flexArr={[1,2,3,2]} style={{ height: 40, backgroundColor: '#f1f8ff' }} textStyle={{ margin: 6 }}/>
+                  <TableWrapper style={{ flexDirection: 'row' }}>
+                    <Rows data={smstr9.data} flexArr={[1,2,3,2]} textStyle={{ margin: 6, fontSize: 10 }}/>
+                  </TableWrapper>
+                </Table>
+              </View>
             </ScrollView>
-          </View>
         </View>
       );
     }
