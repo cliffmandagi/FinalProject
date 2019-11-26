@@ -10,29 +10,29 @@ class Home extends Component{
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <Text style={{ fontSize: 18, fontWeight: "bold", marginLeft: 20, marginTop: 10 }}>News</Text>
                     <View style={styles.card}>
-                        <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/6/'}}/>
+                        <Image style={styles.cardImage} source={require('../assets/news1.jpg')}/>
                             <View style={styles.cardHeader}>
                             <View>
-                                <Text style={styles.title}>Lorem ipsum dolor</Text>
-                                <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                                <Text style={styles.title}>Kunjungan Menteri Pariwisata</Text>
+                                <Text style={styles.description}>Kuliah Umum Menteri Pariwisata Republik Indonesia, Dr. Ir. Arief Yahya, M.Sc., di kampus Universitas Klabat, Rabu, 27 Maret 2019 dengan topik "Digital and Millenials Tourism</Text>
                             </View>
                         </View>
                     </View>
                     <View style={styles.card}>
-                        <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/5/'}}/>
+                        <Image style={styles.cardImage} source={require('../assets/news2.jpg')}/>
                             <View style={styles.cardHeader}>
                             <View>
-                                <Text style={styles.title}>Lorem ipsum dolor</Text>
-                                <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                                <Text style={styles.title}>6th International Scholars Conference, Philippines</Text>
+                                <Text style={styles.description}>The International Scholars Conference adalah konferensi penelitian multidisiplin yang diselenggarakan oleh kemitraan dari empat perguruan tinggi, yaitu Adventist University of the Philippines (AUP), Asia-Pacific International University (APIU)</Text>
                             </View>
                         </View>
                     </View>
                     <View style={styles.card}>
-                        <Image style={styles.cardImage} source={{uri:'https://lorempixel.com/400/200/nature/4/'}}/>
+                        <Image style={styles.cardImage} source={require('../assets/news3.jpg')}/>
                             <View style={styles.cardHeader}>
                             <View>
-                                <Text style={styles.title}>Lorem ipsum dolor</Text>
-                                <Text style={styles.description}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean  ligula...</Text>
+                                <Text style={styles.title}>Swakelola APTIKOM untuk pelaku industri rumahan</Text>
+                                <Text style={styles.description}>Selama 2 hari, Asosiasi Pendidikan Tinggi Ilmu Komputer (APTIKOM) wilayah Sulawesi Utara telah melangsungkan kegiatan Swakelola dalam rangka Pelatihan Peningkatan Produk Pelaku Industri Rumahan melalui Teknologi Informasi (ICT) di propinsi Sulawesi Utara</Text>
                             </View>
                         </View>
                     </View>
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     },
     cardImage:{
       flex: 1,
-      height: 150,
+      height: 180,
       width: null,
     },
     /******** card components **************/
