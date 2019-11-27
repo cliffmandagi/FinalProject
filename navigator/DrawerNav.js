@@ -6,6 +6,7 @@ import {NavigationActions} from 'react-navigation';
 import Home from '../screens/Home';
 import Curriculum from '../screens/Curriculum';
 import ContactUs from '../screens/ContactUs';
+import AboutUs from '../screens/AboutUs';
 
 class SideMenu extends Component {
     navigateToScreen = ( route ) =>(
@@ -39,6 +40,15 @@ class SideMenu extends Component {
                             style={{ height: 21, width: 21, marginLeft: 10, }}
                         />
                         <Text style={{ marginLeft: 25 }}>Home</Text>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={this.navigateToScreen('AboutUs')}>
+                    <View style={{ backgroundColor: 'white', paddingVertical: 10, flexDirection: 'row'}}>
+                        <Image
+                            source={require('../assets/people.png')}
+                            style={{ height: 21, width: 21, marginLeft: 10, }}
+                        />
+                        <Text style={{ marginLeft: 25 }}>About Us</Text>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={this.navigateToScreen('Curriculum')}>
@@ -75,7 +85,8 @@ const DrawerNavigator =  createDrawerNavigator(
 	{
         Home: Home,
         Curriculum: Curriculum,
-        ContactUs: ContactUs
+        ContactUs: ContactUs,
+        AboutUs: AboutUs
 	},{
         contentComponent: SideMenu,
         DrawerConfig

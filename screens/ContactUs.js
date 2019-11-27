@@ -11,7 +11,7 @@ class ContactUs extends Component{
                 <View>
                     <MapShow/>
                 </View>
-                <View style={{ flex: 1 }}>
+                <View style={{ flex: 1, marginTop: 20 }}>
                     <Image
                         source={require('../assets/logo2.png')}
                         style={{ height: 50, width: 150, alignSelf: 'center', marginVertical: 20 }}
@@ -49,14 +49,14 @@ class ContactUs extends Component{
                     <View style={{ alignItems: 'center', marginHorizontal: 15 }}>
                         <Image
                             source={require('../assets/facebook.png')}
-                            style={{ height: 50, width: 50 }}
+                            style={{ height: 40, width: 40 }}
                         />
                         <Text style={{ fontSize: 8 }}>facebook.com/unklabfik/</Text>
                     </View>
                     <View style={{ alignItems: 'center', marginHorizontal: 15 }}>
                         <Image
                             source={require('../assets/twitter.png')}
-                            style={{ height: 50, width: 50 }}
+                            style={{ height: 40, width: 40 }}
                         />
                         <Text style={{ fontSize: 8 }}>twitter.com/FIK_UNKLAB/</Text>
                     </View>
