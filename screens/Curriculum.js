@@ -227,7 +227,7 @@ const head = {
 class SI extends Component {
   render() {
     return (
-      <View style={{ marginHorizontal: 10, marginBottom: 10 }}>
+      <View style={{ marginHorizontal: 10 }}>
           <ScrollView showsVerticalScrollIndicator={false}>
             <View style={{ marginVertical: 10 }}>
               <Table borderStyle={{ borderWidth: 2, borderColor:'#c8e1ff' }}>
@@ -330,7 +330,7 @@ class SI extends Component {
 class TI extends Component {
     render() {
       return (
-        <View style={{ marginHorizontal: 10, marginBottom: 10 }}>
+        <View style={{ marginHorizontal: 10 }}>
           <ImageBackground source={require('../assets/backgroundimg.png')} style={{ width: '100%', height: '100%' }}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={{ marginVertical: 10 }}>
